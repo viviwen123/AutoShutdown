@@ -1,0 +1,17 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/list_divider" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/white" />
+    </LinearLayout>

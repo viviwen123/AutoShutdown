@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkgray">#808080</color>
+    <color name="pink">#FF22D3</color>
+    <color name="grey" >#FF999999</color>
+    <color name="background">#fff6f6f6</color>
+    <color name="list_item_click">#ffdcebcd</color>
+    <color name="two_main_background">#fff6f6f6</color>
+	<color name="list_divider">#ffcdcdcd</color>
+	<color name="standard_info_text_color">#ff323232</color>
+	<color name="small_info_text_color">#ff6e6e6e</color>
+
+</resources>

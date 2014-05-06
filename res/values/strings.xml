@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">定时开关机</string>
+    <string name="title_activity_main">定时开关机</string>
+    <string name="share_complete">分享完成</string>
+    <string name="share_failed">分享失败。</string>
+    <string name="share_cancel">分享成功。</string>
+    <string name="system_app_move_title">将应用安装为系统应用</string>
+    <string name="system_app_move_message">此操作需要root权限。由于Android 4.2禁止任何第三方软件设置飞行模式，因此需要将本应用安装为系统应用才能正常运行。安装为系统应用之后，程序将无法正常卸载，如需卸载，请再次点击此按钮，将应用恢复为普通应用。操作成功后，手机将自动重启一次，如未重启，请手动重启一次。执行此操作，视为您已同意此声明。</string>
+    <string name="system_app_remove_message">此操作需要root权限。操作成功后，手机将自动重启一次，如未重启，请手动重启一次。执行此操作，视为您已同意此声明。</string>
+    <string name="system_app_remove_title">恢复为普通应用</string>
+
+</resources>

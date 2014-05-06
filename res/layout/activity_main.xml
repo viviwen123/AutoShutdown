@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/two_main_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/middle_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="反骚扰卫士"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_back_selector"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/function"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="20dp"
+                    android:text="功能开关"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/functionBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/function"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="开启/关闭定时开关机功能"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/functionImage"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/icon_switch_on" >
+                </ImageView>
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RelativeLayout1"
+                android:background="@drawable/item_back_selector"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="20dp"
+                    android:text="关机时间"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/CloseTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/close"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="00:00"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_back_selector"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="20dp"
+                    android:text="开机时间"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/OpenTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/open"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="07:00"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_back_selector"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/Rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="20dp"
+                    android:text="小憩设置"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/RestTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Rest"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="点击设置小憩时间"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_back_selector"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="20dp"
+                    android:text="使用说明"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/HelpDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/help"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="软件说明及注意事项"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_back_selector"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="20dp"
+                    android:text="第二时段"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/moreDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/more"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="设置第二个时间段"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_back_selector"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/root"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="20dp"
+                    android:text="Root应用"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/rootDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/root"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="将应用设为系统应用"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/middle_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="使用说明"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/myWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+</LinearLayout>
